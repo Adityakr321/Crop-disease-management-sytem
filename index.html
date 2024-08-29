@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crop Disease Management</title>
+        <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p style="background-image: url(./OIP.jpeg);"></p>
+            <h1>Crop Disease Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#diagnose">Diagnose</a></li>
+                    <li><a href="#management">Management</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="content">
+            <h2>Welcome to Crop Disease Management</h2>
+            <p>Your one-stop solution for identifying and managing crop diseases.</p>
+            <a href="#diagnose" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="diagnose">
+        <div class="container">
+            <h2>Diagnose a Disease</h2>
+            <form id="diagnose-form">
+                <div class="form-group">
+                    <label for="crop">Select Crop:</label>
+                    <select id="crop" name="crop">
+                        <option value="wheat">Wheat</option>
+                        <option value="corn">Corn</option>
+                        <option value="rice">Rice</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="symptoms">Enter Symptoms:</label>
+                    <input type="text" id="symptoms" name="symptoms" placeholder="Describe symptoms here...">
+                </div>
+
+                <div id="upload-section">
+                    <h2>Upload an Image of Your Crop</h2>
+                    <div id="upload-container">
+                        <input type="file" id="imageUpload" accept="image/*" multiple />
+                        <label for="imageUpload" id="upload-label">Drag & drop images or click to upload</label>
+                    </div>
+                    <div id="imagePreviewContainer"></div>
+                </div>
+                <input type="submit" value="Diagnose" class="btn">
+            </form>
+
+
+        </div>
+    </section>
+
+
+    <!-- <section id="results-section" style="display:none;">
+        <h2>Analysis Results</h2>
+        <div id="results-container"></div>
+        <button id="newAnalysisButton">Analyze Another Image</button>
+    </section> -->
+
+    <section id="management">
+        <div class="container">
+            <h2>Disease Management</h2>
+            <p>Get expert advice and management tips for dealing with crop diseases.</p>
+            <ul class="management-list">
+                <li><a href="#">Wheat Rust Management</a></li>
+                <li><a href="#">Corn Blight Management</a></li>
+                <li><a href="#">Rice Blast Management</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="reports">
+        <div class="container">
+            <h2>Report a Disease</h2>
+            <form>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter your location...">
+                </div>
+
+                <div class="form-group">
+                    <label for="disease">Disease Identified:</label>
+                    <input type="text" id="disease" name="disease" placeholder="Enter disease name...">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" placeholder="Describe the disease..."></textarea>
+                </div>
+
+                <input type="submit" value="Submit Report" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, reach out to us at <a href="mailto:info@cropmanagement.com">info@cropmanagement.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Crop Disease Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
